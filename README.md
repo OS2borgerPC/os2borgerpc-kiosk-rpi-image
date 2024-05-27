@@ -11,7 +11,7 @@ DISCLAIMER: This is an experimental project not supported by Magenta. It has bee
 [Speed up the process - Clone your Raspberry Pi SD-card and turn it into an img-file](https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/blob/main/README.md#speed-up-the-process---clone-your-raspberry-pi-sd-card-and-turn-it-into-an-img-file)\
 [The RPI case](https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/blob/main/README.md#the-rpi-case)\
 [Chromium installation and startup](https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/blob/main/README.md#chromium-installation-and-startup)\
-[Protect the SD-card by making it read-only](https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/blob/main/README.md#protect-the-sd-card-by-making-it-read-only)
+[Protect the SD-card by making it read-only](https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/blob/main/README.md#protect-the-sd-card-by-making-it-read-only)\
 [Wakeup/sleep script](https://github.com/OS2borgerPC/os2borgerpc-kiosk-rpi-image#wakeupsleep-script)
 
 
