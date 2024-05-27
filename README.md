@@ -94,7 +94,19 @@ When the Overlay filesystem is enabled, changes you make to the filesystem are s
 
 Script to [Turn the Overlay Filesystem on/off](https://github.com/bibsdb/os2borgerpc-local-scripts/blob/master/2204rpi_overlayfs.sh)
 
+## Wakeup/Sleep script
+Raspberry Pi 4 does not have a Real Time Clock (RTC). Therefore OS2BorgerPC's built in on/off scheduling feature can not be used. It depends on RTC.
+Instead I have written a script to interrupt/resume the HDMI-signal to the screen at specified times every day. Different settings can be applied for weekdays and weekends.
+- When the HDMI signal is interrupted, most screens will automatically go into sleep mode.
+- When the HDMI signal is resumed, the screen will wake up.
+- 
+The script takes 4 parameters:
+- weekday-wakeup-time (type Time)
+- weekday-sleep-time (type Time)
+- weekend-wakeup-time (type Time)
+- weekend-sleep-time (type Time)
 
+Link to the script: [RPI shutdown and wakeup with weekend](https://github.com/bibsdb/os2borgerpc-local-scripts/blob/master/rpi-shutdown-and-wakeup-with-weekend.sh)
 
 
 
