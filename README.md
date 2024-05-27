@@ -102,10 +102,10 @@ Instead I have written a script to interrupt/resume the HDMI-signal to the scree
 - When the HDMI signal is resumed, the screen will wake up.
 - 
 The script takes 4 parameters:
-- weekday-wakeup-time (type Time)
-- weekday-sleep-time (type Time)
-- weekend-wakeup-time (type Time)
-- weekend-sleep-time (type Time)
+1. weekday-wakeup-time (type Time)
+2. weekday-sleep-time (type Time)
+3. weekend-wakeup-time (type Time)
+4. weekend-sleep-time (type Time)
 
 Link to the script: [RPI shutdown and wakeup with weekend](https://github.com/bibsdb/os2borgerpc-local-scripts/blob/master/rpi-shutdown-and-wakeup-with-weekend.sh)
 
