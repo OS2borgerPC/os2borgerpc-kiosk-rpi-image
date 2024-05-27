@@ -100,7 +100,7 @@ Raspberry Pi 4 does not have a Real Time Clock (RTC). Therefore OS2BorgerPC's bu
 Instead I have written a script to interrupt/resume the HDMI-signal to the screen at specified times every day. Different settings can be applied for weekdays and weekends.
 - When the HDMI signal is interrupted, most screens will automatically go into sleep mode.
 - When the HDMI signal is resumed, the screen will wake up.
-- 
+  
 The script takes 4 parameters:
 1. weekday-wakeup-time (type Time)
 2. weekday-sleep-time (type Time)
