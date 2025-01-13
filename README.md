@@ -25,7 +25,7 @@ We start with a generic Ubuntu Server 22.04.04 LTS (64 bit) ARM image. We modify
 2. Place a SD-card in the card reader of your PC.
 3. Start the Raspberry Pi Imager program
    - In **Raspberry Pi Device** select **Raspberry Pi 4**
-   - In **Operating system**. Scroll down and unfold **Other general-purpose OS**. Choose **Ubuntu**. Scroll down and select **Ubuntu Server 22.04.04 LTS (64 bit)**
+   - In **Operating system**. Scroll down and unfold **Other general-purpose OS**. Choose **Ubuntu**. Scroll down and select **Ubuntu Server 22.04.05 LTS (64 bit)**
    - In **Storage**. Choose the SD-card you have inserted.
    <br><br>
    <img src="https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/assets/1641342/5fe1044c-099b-4608-97ec-374a01dfdec0" width="800">
