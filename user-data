@@ -20,17 +20,15 @@ timezone: Europe/Copenhagen
 runcmd:
   - localectl set-x11-keymap "dk" pc105
   - setupcon -k --force || true
-  - 'echo Downloader OS2BorgerPC Kiosk RPI Image'
-  - 'curl -Lo os2borgerpc-kiosk-rpi-image.zip "https://github.com/os2borgerpc/os2borgerpc-kiosk-rpi-image/archive/refs/heads/main.zip"'
   - 'apt-get update'
-  - 'apt-get install unzip'
-  - 'unzip os2borgerpc-kiosk-rpi-image.zip'
-  - 'rm os2borgerpc-kiosk-rpi-image.zip'
-  - 'chmod +x os2borgerpc-kiosk-rpi-image-main/scripts/*.sh'
-  - 'touch os2borgerpc-kiosk-rpi-image-main/scripts/VERSION'
-  - 'echo 2.0.0 >> os2borgerpc-kiosk-rpi-image-main/scripts/VERSION'
-  - 'mv os2borgerpc-kiosk-rpi-image-main/scripts/* /usr/local/bin/'
-  - 'rm -r os2borgerpc-kiosk-rpi-image-main'
+  - 'apt-get install git -y'
+  - 'echo Downloader OS2BorgerPC Kiosk Image to use the script package'
+  - 'git clone https://github.com/OS2borgerPC/os2borgerpc-kiosk-image.git'
+  - 'chmod +x os2borgerpc-kiosk-image/image/ubuntu-image/scripts/*.sh'
+  - 'echo "2.0.0" | tee -a os2borgerpc-kiosk-image/image/ubuntu-image/scripts/VERSION
+  - 'mv os2borgerpc-kiosk-image/image/ubuntu-image/scripts/* /usr/local/bin/'
+  - 'rm -r os2borgerpc-kiosk-image'
+  - 'apt-get remove git -y'
   - 'cd /usr/local/bin'
   - './install_dependencies.sh'
   - 'sed -ir "s/^[#]*\s*preserve_hostname:.*/preserve_hostname: true/" /etc/cloud/cloud.cfg'
