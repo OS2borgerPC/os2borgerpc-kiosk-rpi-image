@@ -22,14 +22,13 @@ runcmd:
   - setupcon -k --force || true
   - 'apt-get update'
   - 'apt-get install git -y'
-  - 'echo Downloader OS2BorgerPC Kiosk Image to use the script package'
+  - 'echo Downloader OS2BorgerPC Kiosk Image to use the scripts'
   - 'git clone https://github.com/OS2borgerPC/os2borgerpc-kiosk-image.git'
   - 'chmod +x os2borgerpc-kiosk-image/image/ubuntu-image/scripts/*.sh'
-  - 'echo "2.0.0" | tee -a os2borgerpc-kiosk-image/image/ubuntu-image/scripts/VERSION
   - 'mv os2borgerpc-kiosk-image/image/ubuntu-image/scripts/* /usr/local/bin/'
+  - 'mv os2borgerpc-kiosk-image/VERSION /usr/local/bin/VERSION'
+  - 'mv os2borgerpc-kiosk-image/config.cfg /usr/local/bin/config.cfg'
   - 'rm -r os2borgerpc-kiosk-image'
-  - 'apt-get remove git -y'
   - 'cd /usr/local/bin'
   - './install_dependencies.sh'
   - 'sed -ir "s/^[#]*\s*preserve_hostname:.*/preserve_hostname: true/" /etc/cloud/cloud.cfg'
- 
