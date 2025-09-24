@@ -4,7 +4,7 @@
    
    *Raspberry Pi 4 in an Argon One v2 case placed behind a wall mounted display screen*
 
-DISCLAIMER: This is an experimental project not supported by Magenta. It has been developed by Agnete Moos, Sønderborg Kommune with support from Dennis Borup Jacobsen, Aarhus Kommune. Questions or comments should be directed to Agnete Moos agms@sonderborg.dk.
+DISCLAIMER: This is an experimental project. It has been developed by Agnete Moos, Sønderborg Kommune with support from Dennis Borup Jacobsen, Aarhus Kommune. Questions or comments should be directed to Agnete Moos agms@sonderborg.dk.
 
 ###### Contents
 [How to create a bootable OS2BorgerPC RPI Kiosk Image](https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/blob/main/README.md#how-to-create-a-bootable-os2borgerpc-rpi-kiosk-image)\
@@ -28,20 +28,28 @@ We start with a generic Ubuntu Server 22.04.04 LTS (64 bit) ARM image. We modify
    - In **Operating system**. Scroll down and unfold **Other general-purpose OS**. Choose **Ubuntu**. Scroll down and select **Ubuntu Server 22.04.05 LTS (64 bit)**
    - In **Storage**. Choose the SD-card you have inserted.
    <br><br>
-   <img src="https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/assets/1641342/5fe1044c-099b-4608-97ec-374a01dfdec0" width="800">
+ <img width="686" height="490" alt="1" src="https://github.com/user-attachments/assets/57dd7434-b519-4144-9329-4d969835688a" />
 
 
 5. Then you are asked if you want to apply OS customization settings. Press **No**. We do that by applying our own config-files in the next step.
     <br><br>
-   <img src="https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/assets/1641342/4d967a39-a7d9-44a0-a625-9361ee86069e" width="600">
+<img width="686" height="490" alt="image" src="https://github.com/user-attachments/assets/37748a7d-9390-4ccc-b210-183ecf5b2c9e" />
+
+
+
    <br><br>
 
 7. Now confirm to continue. Press **Yes**
    <br><br>
-   <img src="https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/assets/1641342/095c50c3-b1b3-4b24-8e1a-7acb26dbd397" width="600">
+  <img width="686" height="490" alt="image" src="https://github.com/user-attachments/assets/3869a1a9-3a5e-4ec3-9972-dacad941b141" />
+
    <br><br>
 
 9. The Ubuntu Image is written to your SD-card. This will take a few minutes.
+     <br><br>
+    <img width="686" height="490" alt="5" src="https://github.com/user-attachments/assets/7e159225-d23d-4f4d-9815-644d685e6a69" />
+     <br><br>
+
 10. Eject the SD-card and reinsert it to gain access from the file manager.
 
 ---
@@ -49,7 +57,7 @@ We start with a generic Ubuntu Server 22.04.04 LTS (64 bit) ARM image. We modify
 Now we need to configure the Ubuntu Image with some custom configuration files.
 1. Access the  SD-card through the file manager. Open the `system-boot` directory.
     <br><br>
-   <img src="https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/assets/1641342/0f6667fd-6ae9-4c45-bf35-94f64ae21c2e" width="800">
+   <img width="888" height="547" alt="image" src="https://github.com/user-attachments/assets/2b310279-a11b-4c23-af6f-8261ec16ed65" />
    <br><br>
 
 2. Overwrite three files with the ones provided in this project.
