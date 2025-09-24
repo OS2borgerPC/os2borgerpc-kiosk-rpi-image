@@ -42,6 +42,7 @@ We start with a generic Ubuntu Server 22.04.04 LTS (64 bit) ARM image. We modify
    <br><br>
 
 9. The Ubuntu Image is written to your SD-card. This will take a few minutes.
+10. Eject the SD-card and reinsert it to gain access from the file manager.
 
 ---
    
