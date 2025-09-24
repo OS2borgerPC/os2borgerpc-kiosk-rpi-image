@@ -1,7 +1,6 @@
 # Raspberry Pi OS2BorgerPC Kiosk Image #
 
-   <img src="https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/assets/1641342/3d7cc208-148c-44e5-a444-a693ab52f44e" width="600">
-   
+   ![IMG_1114squares](https://github.com/user-attachments/assets/2a25d5df-dcdf-4c5b-8e6a-34f094822fa2)  
    *Raspberry Pi 4 in an Argon One v2 case placed behind a wall mounted display screen*
 
 DISCLAIMER: This is an experimental project. It has been developed by Agnete Moos, Sønderborg Kommune with support from Dennis Borup Jacobsen, Aarhus Kommune. Questions or comments should be directed to Agnete Moos agms@sonderborg.dk.
